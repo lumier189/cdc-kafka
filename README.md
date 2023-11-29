@@ -38,7 +38,7 @@ caso queira usar uma database Já existente, ficar atendo as configurações nec
 IMPORTANTE: Os comandos podem ser diferentes dependendo da versão do bd
 
 GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user' IDENTIFIED BY 'password';
-SHOW GRANTS FOR 'contemplato'@'%'; 
+SHOW GRANTS FOR 'USER'@'%'; 
 show global variables like '%GTID%';
 set @@global.binlog_row_value_options="" ; 
 show global variables where variable_name = 'binlog_row_value_options'; 
