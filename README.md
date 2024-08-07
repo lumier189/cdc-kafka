@@ -4,7 +4,7 @@ Change Data Capture com kafka
 
 Se é seu primeiro contato com o kafka recomendo dar uma conferida na introdução ao kafka com full-cycle
 
-https://www.youtube.com/watch?v=o5yviW6QSrE&list=PL5aY_NrL1rjt_AZxj11kQjiTNLGg4ZaZA&ab_channel=FullCycle
+[video](https://www.youtube.com/watch?v=o5yviW6QSrE&list=PL5aY_NrL1rjt_AZxj11kQjiTNLGg4ZaZA&ab_channel=FullCycle)
 
 Sobre o repositório, tem um projeto teste pronto pra rodar e testar o cdc com kakfa
 
@@ -21,6 +21,7 @@ Detalhes campos conector: https://debezium.io/documentation/reference/stable/con
 
 
 kafka ui - http://localhost:8080/ admin admin
+
 ![image](https://github.com/lumier189/cdc-kafka/assets/108551838/d63d96e2-c55c-4224-9f45-770121e103d1)
 
 connector ui - http://localhost:8080
@@ -29,13 +30,9 @@ connector ui - http://localhost:8080
 connector rest API infos:
 https://docs.confluent.io/platform/current/connect/references/restapi.html
 
-
-
-
-
 caso queira usar uma database Já existente, ficar atendo as configurações necessárias para o connector poder ler e transferir os dados da database
 
-IMPORTANTE: Os comandos podem ser diferentes dependendo da versão do bd
+disclaimer: Os comandos podem ser diferentes dependendo da versão do bd
 
 GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user' IDENTIFIED BY 'password';
 SHOW GRANTS FOR 'USER'@'%'; 
